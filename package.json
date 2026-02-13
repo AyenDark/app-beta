@@ -1,0 +1,1 @@
+{\n  \"name\": \"app-beta\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A sample project\",\n  \"main\": \"index.js\",\n  \"dependencies\": {},\n  \"devDependencies\": {},\n  \"scripts\": {},\n  \"author\": \"AyenDark\",\n  \"license\": \"ISC\"\n}
