@@ -24,8 +24,9 @@
  $conn = pg_connect($data_connection);
 
  if(!$conn){
-echo "Error: Unable to conncet to database";
+  echo "Error";
+  exit();
  }else{
-    echo "Success Connection!!!";
+    echo "succes";
  }
 ?>
