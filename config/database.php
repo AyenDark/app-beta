@@ -23,7 +23,7 @@
     ";
 
 
-    //Supalñkjjk09 Database connection
+    //Supa Database connection
      $supa_data_connection = "
     host             =$SUPA_HOST
     dbname           =$SUPA_DBNAME
@@ -41,6 +41,7 @@
         echo "local success connection!!!";
     }
 
+/*
     $supa_conn = pg_connect($supa_data_connection);
 
     if(!$supa_conn){
@@ -49,4 +50,5 @@
     }else{
         echo " <br> Supabase success connection!!!";
     }
+        */
 ?>
