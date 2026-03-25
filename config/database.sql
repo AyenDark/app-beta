@@ -10,6 +10,6 @@ CREATE TABLE users (
     birthday DATE,
     status BOOLEAN NOT NULL DEFAULT TRUE,
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW(),X
     deleted_at TIMESTAMP
 );
