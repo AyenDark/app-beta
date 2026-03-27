@@ -35,8 +35,20 @@ VALUES('$f_name','$l_name','$e_mail','$m_phone','$p_sword')" ;
 
 // ejecutar 
 
-$result = pg_query($sql) ;
+$res_local = pg_query($local_conn, $sql); 
 
+if ($res_local) {
+    // --- PASO B: Si funcionó el anterior, guardar en la nube (Supabase) ---
+    $res_supa = pg_query($supa_conn, $sql);
+
+    if ($res_supa) {
+        echo "¡Listo! Guardado en ambos lados.";
+    } else {
+        echo "Error: Se guardó en local pero no en la nube.";
+    }
+} else {
+    echo "Error: No se pudo guardar ni en local.";
+}
 
 
 
