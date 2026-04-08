@@ -10,6 +10,7 @@ $enc_pass =    md5($p_sword);
 $m_phone =     $_POST['mphone'];
 
 
+
 //query to insert into sql
 $sql = "INSERT INTO users_model ( first_name, last_name, email, mobile_phone, pasword )
 VALUES('$f_name','$l_name','$e_mail','$m_phone','$enc_pass')" ;
