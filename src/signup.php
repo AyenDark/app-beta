@@ -27,16 +27,16 @@ if (pg_num_rows($res_phone) > 0) {
     exit();
 }
 
-
-
-
 //query to insert into sql
 $sql = "INSERT INTO users_model ( first_name, last_name, email, mobile_phone, pasword )
 VALUES('$f_name','$l_name','$e_mail','$m_phone','$enc_pass')" ;
 
 // ejecutar 
 
+
 $res_local = pg_query($local_conn, $sql); 
+
+
 
 if ($res_local) {
     // --- PASO B: Si funcionó el anterior, guardar en la nube (Supabase) ---
