@@ -7,10 +7,10 @@
     $LOCAL_PORT       = '5432';
 
     //Supabase Database configuration
-    $SUPA_HOST        = 'aws-1-us-east-2.pooler.supabase.com';
+    $SUPA_HOST        = 'aws-1-us-west-2.pooler.supabase.com';
     $SUPA_DBNAME      = 'postgres';
-    $SUPA_USERNAME    = 'postgres.fvqvwfwooutmsvdogdbp  ';
-    $SUPA_PASSWORD    = 'unicesmag@@';
+    $SUPA_USERNAME    = 'postgres.zfspfraieickuhjzpurr';
+    $SUPA_PASSWORD    = 'unicesmag69';
     $SUPA_PORT        = '6543';
 
     //Local Database connection
@@ -54,3 +54,4 @@
 ?>
 
 
+1

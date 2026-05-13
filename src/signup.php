@@ -36,16 +36,15 @@ VALUES('$f_name','$l_name','$e_mail','$m_phone','$enc_pass')" ;
 
 
 $res_local = pg_query($local_conn, $sql); 
-
-
-
 if ($res_local) {
     // --- PASO B: Si funcionó el anterior, guardar en la nube (Supabase) ---
     $res_supa = pg_query($supa_conn, $sql);
 
     if ($res_supa) {
-        echo "¡Listo! Guardado en ambos lados.";
-    } else {
+        //echo "¡Listo! Guardado en ambos lados.";
+        echo "<script>alert('Registro exitoso.'); </script>";
+        header('refresh:0;url=signin.html');
+    } else {    
         echo "Error: Se guardó en local pero no en la nube.";
     }
 } else {
